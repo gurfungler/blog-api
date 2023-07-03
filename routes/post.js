@@ -5,7 +5,7 @@ var controllers = require("../controllers/postController");
 router.get("/", controllers.getAllPosts, (req, res, next) => {
   res.render("post", {
     title: ":v",
-    post_list: req.body,
+    post_list: req.body.posts,
   });
 });
 router.get("/:id", controllers.getPost);

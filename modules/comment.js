@@ -8,6 +8,7 @@ const CommentSchema = new Schema({
     type: String,
     required: true,
   },
+  timeStamp: { type: String },
   body: {
     type: String,
     required: true,
