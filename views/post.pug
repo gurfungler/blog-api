@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    h1= title
+         each post in post_list
+            li
+                div #{post.username}
+                div #{post.timeStamp}
+                div #{post.title}
+                div #{post.body}
+
